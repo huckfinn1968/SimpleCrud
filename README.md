@@ -21,7 +21,7 @@
 <p>
   Start Angular Server:
   <br>
-  <strong> npm install </strong>
+  <strong> npm install </strong><br>
   <strong> ng serve </strong>
 </p>
 
