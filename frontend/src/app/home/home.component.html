@@ -1,0 +1,32 @@
+<br>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Descripción</th>
+    <th scope="col">Genero</th>
+    <th scope="col">Año</th>
+    <th scope="col">Duración</th>
+    <th scope="col">Creación</th>
+    <th scope="col">Actualización</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let movie of movies">
+    <th scope="row">{{movie.id}}</th>
+    <td><strong>{{movie.name}}</strong></td>
+    <td>{{movie.description}}</td>
+    <td>{{movie.genre}}</td>
+    <td>{{movie.year}}</td>
+    <td>{{movie.duration}}</td>
+    <td *ngIf="movie.created_at">{{movie.created_at | date:'dd-MM-yyyy'}}</td>
+    <td *ngIf="movie.updated_at">{{movie.updated_at | date:'dd-MM-yyyy'}}</td>
+    <td>
+      <a class="btn btn-primary btn-sm" routerLink="/form/{{movie.id}}">Ver/Editar</a>
+      <a class="btn btn-primary btn-sm btn-danger" style="margin: 5%;" (click)="delete(movie.id)">Eliminar</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
