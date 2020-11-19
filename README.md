@@ -7,7 +7,7 @@
   <br> <strong> CREATE DATABASE movies_db; </strong>
 </p>
 <br>
-<h2>2.- Laravel </h2>
+<h2>2.- Laravel (backend folder) </h2>
 <p> 
   Migrate tables to MySQL using the following command in shell or cmd: 
   <br> <strong> php artisan migrate </strong>
@@ -16,7 +16,7 @@
   <br> <strong> php artisan serve </strong>
 </p>
 <br>
-<h2>3.- Angular </h2>
+<h2>3.- Angular (frontend folder) </h2>
 <p>
   Start Angular Server:
   <br>
