@@ -8,6 +8,7 @@
 </p>
 <br>
 <h2>2.- Laravel (backend folder) </h2>
+<small> You need to have installed Laravel on your own computer </small>
 <p> 
   Migrate tables to MySQL using the following command in shell or cmd: 
   <br> <strong> php artisan migrate </strong>
@@ -20,6 +21,7 @@
 <p>
   Start Angular Server:
   <br>
+  <strong> npm install </strong>
   <strong> ng serve </strong>
 </p>
 
